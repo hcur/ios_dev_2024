@@ -3,17 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC8DE5E02CA9D0FD00A603EE /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8DE5DF2CA9D0FD00A603EE /* NavigationView.swift */; };
 		BC9301742CA099AD00849595 /* LiveCodeDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9301732CA099AD00849595 /* LiveCodeDemoApp.swift */; };
 		BC9301762CA099AD00849595 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9301752CA099AD00849595 /* ContentView.swift */; };
 		BC9301782CA099AF00849595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9301772CA099AF00849595 /* Assets.xcassets */; };
 		BC93017B2CA099AF00849595 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC93017A2CA099AF00849595 /* Preview Assets.xcassets */; };
-		BC9301852CA099AF00849595 /* LiveCodeDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9301842CA099AF00849595 /* LiveCodeDemoTests.swift */; };
-		BC93018F2CA099AF00849595 /* LiveCodeDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC93018E2CA099AF00849595 /* LiveCodeDemoUITests.swift */; };
-		BC9301912CA099AF00849595 /* LiveCodeDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9301902CA099AF00849595 /* LiveCodeDemoUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,17 +32,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BC9301702CA099AD00849595 /* LiveCodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveCodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8DE5DF2CA9D0FD00A603EE /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		BC9301702CA099AD00849595 /* DevClassApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevClassApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9301732CA099AD00849595 /* LiveCodeDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCodeDemoApp.swift; sourceTree = "<group>"; };
 		BC9301752CA099AD00849595 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BC9301772CA099AF00849595 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC93017A2CA099AF00849595 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BC9301802CA099AF00849595 /* LiveCodeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveCodeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC9301842CA099AF00849595 /* LiveCodeDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCodeDemoTests.swift; sourceTree = "<group>"; };
-		BC93018A2CA099AF00849595 /* LiveCodeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveCodeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC93018E2CA099AF00849595 /* LiveCodeDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCodeDemoUITests.swift; sourceTree = "<group>"; };
-		BC9301902CA099AF00849595 /* LiveCodeDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCodeDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BC9301802CA099AF00849595 /* DevClassAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevClassAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC93018A2CA099AF00849595 /* DevClassAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevClassAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		BC0D2C022CAB8EC10012730E /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BC93016D2CA099AD00849595 /* Frameworks */ = {
@@ -75,8 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				BC9301722CA099AD00849595 /* LiveCodeDemo */,
-				BC9301832CA099AF00849595 /* LiveCodeDemoTests */,
-				BC93018D2CA099AF00849595 /* LiveCodeDemoUITests */,
 				BC9301712CA099AD00849595 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,9 +82,9 @@
 		BC9301712CA099AD00849595 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BC9301702CA099AD00849595 /* LiveCodeDemo.app */,
-				BC9301802CA099AF00849595 /* LiveCodeDemoTests.xctest */,
-				BC93018A2CA099AF00849595 /* LiveCodeDemoUITests.xctest */,
+				BC9301702CA099AD00849595 /* DevClassApp.app */,
+				BC9301802CA099AF00849595 /* DevClassAppTests.xctest */,
+				BC93018A2CA099AF00849595 /* DevClassAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,8 +92,10 @@
 		BC9301722CA099AD00849595 /* LiveCodeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BC0D2C022CAB8EC10012730E /* Models */,
 				BC9301732CA099AD00849595 /* LiveCodeDemoApp.swift */,
 				BC9301752CA099AD00849595 /* ContentView.swift */,
+				BC8DE5DF2CA9D0FD00A603EE /* NavigationView.swift */,
 				BC9301772CA099AF00849595 /* Assets.xcassets */,
 				BC9301792CA099AF00849595 /* Preview Content */,
 			);
@@ -110,29 +110,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		BC9301832CA099AF00849595 /* LiveCodeDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				BC9301842CA099AF00849595 /* LiveCodeDemoTests.swift */,
-			);
-			path = LiveCodeDemoTests;
-			sourceTree = "<group>";
-		};
-		BC93018D2CA099AF00849595 /* LiveCodeDemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				BC93018E2CA099AF00849595 /* LiveCodeDemoUITests.swift */,
-				BC9301902CA099AF00849595 /* LiveCodeDemoUITestsLaunchTests.swift */,
-			);
-			path = LiveCodeDemoUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BC93016F2CA099AD00849595 /* LiveCodeDemo */ = {
+		BC93016F2CA099AD00849595 /* DevClassApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC9301942CA099AF00849595 /* Build configuration list for PBXNativeTarget "LiveCodeDemo" */;
+			buildConfigurationList = BC9301942CA099AF00849595 /* Build configuration list for PBXNativeTarget "DevClassApp" */;
 			buildPhases = (
 				BC93016C2CA099AD00849595 /* Sources */,
 				BC93016D2CA099AD00849595 /* Frameworks */,
@@ -142,14 +125,17 @@
 			);
 			dependencies = (
 			);
-			name = LiveCodeDemo;
+			fileSystemSynchronizedGroups = (
+				BC0D2C022CAB8EC10012730E /* Models */,
+			);
+			name = DevClassApp;
 			productName = LiveCodeDemo;
-			productReference = BC9301702CA099AD00849595 /* LiveCodeDemo.app */;
+			productReference = BC9301702CA099AD00849595 /* DevClassApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BC93017F2CA099AF00849595 /* LiveCodeDemoTests */ = {
+		BC93017F2CA099AF00849595 /* DevClassAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC9301972CA099AF00849595 /* Build configuration list for PBXNativeTarget "LiveCodeDemoTests" */;
+			buildConfigurationList = BC9301972CA099AF00849595 /* Build configuration list for PBXNativeTarget "DevClassAppTests" */;
 			buildPhases = (
 				BC93017C2CA099AF00849595 /* Sources */,
 				BC93017D2CA099AF00849595 /* Frameworks */,
@@ -160,14 +146,14 @@
 			dependencies = (
 				BC9301822CA099AF00849595 /* PBXTargetDependency */,
 			);
-			name = LiveCodeDemoTests;
+			name = DevClassAppTests;
 			productName = LiveCodeDemoTests;
-			productReference = BC9301802CA099AF00849595 /* LiveCodeDemoTests.xctest */;
+			productReference = BC9301802CA099AF00849595 /* DevClassAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BC9301892CA099AF00849595 /* LiveCodeDemoUITests */ = {
+		BC9301892CA099AF00849595 /* DevClassAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC93019A2CA099AF00849595 /* Build configuration list for PBXNativeTarget "LiveCodeDemoUITests" */;
+			buildConfigurationList = BC93019A2CA099AF00849595 /* Build configuration list for PBXNativeTarget "DevClassAppUITests" */;
 			buildPhases = (
 				BC9301862CA099AF00849595 /* Sources */,
 				BC9301872CA099AF00849595 /* Frameworks */,
@@ -178,9 +164,9 @@
 			dependencies = (
 				BC93018C2CA099AF00849595 /* PBXTargetDependency */,
 			);
-			name = LiveCodeDemoUITests;
+			name = DevClassAppUITests;
 			productName = LiveCodeDemoUITests;
-			productReference = BC93018A2CA099AF00849595 /* LiveCodeDemoUITests.xctest */;
+			productReference = BC93018A2CA099AF00849595 /* DevClassAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +192,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BC93016B2CA099AD00849595 /* Build configuration list for PBXProject "LiveCodeDemo" */;
+			buildConfigurationList = BC93016B2CA099AD00849595 /* Build configuration list for PBXProject "DevClassApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +205,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BC93016F2CA099AD00849595 /* LiveCodeDemo */,
-				BC93017F2CA099AF00849595 /* LiveCodeDemoTests */,
-				BC9301892CA099AF00849595 /* LiveCodeDemoUITests */,
+				BC93016F2CA099AD00849595 /* DevClassApp */,
+				BC93017F2CA099AF00849595 /* DevClassAppTests */,
+				BC9301892CA099AF00849595 /* DevClassAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC9301762CA099AD00849595 /* ContentView.swift in Sources */,
+				BC8DE5E02CA9D0FD00A603EE /* NavigationView.swift in Sources */,
 				BC9301742CA099AD00849595 /* LiveCodeDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC9301852CA099AF00849595 /* LiveCodeDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +260,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC9301912CA099AF00849595 /* LiveCodeDemoUITestsLaunchTests.swift in Sources */,
-				BC93018F2CA099AF00849595 /* LiveCodeDemoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,12 +268,12 @@
 /* Begin PBXTargetDependency section */
 		BC9301822CA099AF00849595 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BC93016F2CA099AD00849595 /* LiveCodeDemo */;
+			target = BC93016F2CA099AD00849595 /* DevClassApp */;
 			targetProxy = BC9301812CA099AF00849595 /* PBXContainerItemProxy */;
 		};
 		BC93018C2CA099AF00849595 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BC93016F2CA099AD00849595 /* LiveCodeDemo */;
+			target = BC93016F2CA099AD00849595 /* DevClassApp */;
 			targetProxy = BC93018B2CA099AF00849595 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -473,7 +457,6 @@
 		BC9301982CA099AF00849595 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -485,14 +468,13 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveCodeDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiveCodeDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DevClassApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DevClassApp";
 			};
 			name = Debug;
 		};
 		BC9301992CA099AF00849595 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -504,14 +486,13 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveCodeDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiveCodeDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DevClassApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DevClassApp";
 			};
 			name = Release;
 		};
 		BC93019B2CA099AF00849595 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -528,7 +509,6 @@
 		BC93019C2CA099AF00849595 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -545,7 +525,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BC93016B2CA099AD00849595 /* Build configuration list for PBXProject "LiveCodeDemo" */ = {
+		BC93016B2CA099AD00849595 /* Build configuration list for PBXProject "DevClassApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC9301922CA099AF00849595 /* Debug */,
@@ -554,7 +534,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC9301942CA099AF00849595 /* Build configuration list for PBXNativeTarget "LiveCodeDemo" */ = {
+		BC9301942CA099AF00849595 /* Build configuration list for PBXNativeTarget "DevClassApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC9301952CA099AF00849595 /* Debug */,
@@ -563,7 +543,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC9301972CA099AF00849595 /* Build configuration list for PBXNativeTarget "LiveCodeDemoTests" */ = {
+		BC9301972CA099AF00849595 /* Build configuration list for PBXNativeTarget "DevClassAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC9301982CA099AF00849595 /* Debug */,
@@ -572,7 +552,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC93019A2CA099AF00849595 /* Build configuration list for PBXNativeTarget "LiveCodeDemoUITests" */ = {
+		BC93019A2CA099AF00849595 /* Build configuration list for PBXNativeTarget "DevClassAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC93019B2CA099AF00849595 /* Debug */,
