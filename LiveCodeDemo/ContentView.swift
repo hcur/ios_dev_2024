@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    let student: Student
+
     var body: some View {
         VStack {
             HStack {
@@ -21,14 +22,14 @@ struct ContentView: View {
             Spacer()
             
             VStack {
-                Image("ephelia")
+                Image(student.profilePicture)
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.white, lineWidth: 4))
                 HStack {
-                    Text("Ephelia Williams")
+                    Text(student.name)
                         .font(.largeTitle)
                         .bold()
-                    Text("'25")
+                    Text(student.classYear)
                         .font(.largeTitle)
                 }
                 Text("Student")
@@ -40,7 +41,7 @@ struct ContentView: View {
             VStack(alignment: .leading) {
                 Text("Bio")
                     .font(.headline)
-                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+                Text(student.bio)
             }
             .padding()
             
@@ -50,17 +51,17 @@ struct ContentView: View {
                 HStack {
                     Text("Major(s)")
                     Spacer()
-                    Text("Computer Science")
+                    Text(student.major)
                 }
                 HStack {
                     Text("Club(s)")
                     Spacer()
-                    Text("EphBytes, WSO")
+                    Text(student.clubs)
                 }
                 HStack {
                     Text("Hometown")
                     Spacer()
-                    Text("Williamstown, MA")
+                    Text(student.hometown)
                 }
             }
             .padding()
@@ -90,5 +91,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ContentView(student: Student(name: "Ephelia Williams", profilePicture: "ephelia", classYear: "'25", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", major: "Computer Science", clubs: "Ephbytes, WSO", hometown: "Williamstown, MA"))
 }

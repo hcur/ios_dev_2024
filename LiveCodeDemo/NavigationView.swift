@@ -7,37 +7,27 @@
 
 import SwiftUI
 
-struct Product {
-    let id: UUID = UUID()
-    let title: String
-    let price: Int
-    let color: String
-}
-
 struct NavigationView: View {
-    let products: [Product] = [
-        Product(title: "fairlife", price: 4, color: "brown"),
-        Product(title: "dr pepper", price: 3, color: "red")
+    @State
+    var students: [Student] = [
+        Student(name: "Ephelia Williams", profilePicture: "ephelia", classYear: "'25", bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", major: "Computer Science", clubs: "Ephbytes, WSO", hometown: "Williamstown, MA")
     ]
+
     var body: some View {
         NavigationStack {
-            List(products, id: \.id) { product in
+            List(students, id: \.id) { student in
                 NavigationLink {
-                    DestinationView(product: product)
+                    ContentView(student: student)
                 } label: {
-                    Text(product.title)
+                    HStack {
+                        Image(student.profilePicture)
+                            .resizable()
+                            .frame(width: 96, height: 96)
+                        Text(student.name)
+                    }
                 }
             }
         }
-    }
-}
-
-struct DestinationView: View {
-    let product: Product
-    
-    var body: some View {
-        Text("Price: \(product.price)")
-        Text("Color: \(product.color)")
     }
 }
 

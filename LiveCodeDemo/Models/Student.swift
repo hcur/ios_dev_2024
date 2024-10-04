@@ -15,4 +15,6 @@ struct Student: Identifiable {
     var classYear: String
     var bio: String
     var major: String
+    var clubs: String
+    var hometown: String
 }
